@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Página Principal</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body class="main-page">
+    <div class="franja-azul">
+        <h1 class="titulo-principal">Temas Principales</h1>
+    </div>
+    <div class="container">
+        <table class="imagen-tabla">
+            <tr>
+                <td><a href="{{ url_for('universidad') }}"><img src="{{ url_for('static', filename='universidad.jpg') }}" alt="Universidad Interamericana"></a></td>
+                <td><a href="{{ url_for('programacion') }}"><img src="{{ url_for('static', filename='programacion.jpg') }}" alt="Programación Gráfica"></a></td>
+                <td><a href="{{ url_for('ia') }}"><img src="{{ url_for('static', filename='ia.jpg') }}" alt="Inteligencia Artificial"></a></td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>
+
+
+

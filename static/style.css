@@ -1,0 +1,90 @@
+/* General */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Página principal */
+.main-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 50px;
+}
+
+.container {
+    text-align: center;
+}
+
+.titulo-principal {
+    margin-bottom: 0;        /* Para que no haya margen abajo */
+    color: inherit;          /* Hereda color de la franja azul */
+}
+
+.imagen-tabla {
+    margin: 0 auto;
+}
+
+.imagen-tabla img {
+    width: 250px;
+    height: auto;
+    margin: 0 15px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+    transition: transform 0.3s ease;
+}
+
+.imagen-tabla img:hover {
+    transform: scale(1.05);
+}
+
+/* Franja azul para páginas secundarias y página principal */
+/* Aquí el ajuste para que ocupe todo el ancho */
+.franja-azul {
+    width: 100%;
+    height: 100px;
+    box-sizing: border-box; /* para que el padding no amplíe más allá del 100% */
+    background-color: #a2d5f2;
+    padding: 30px;
+    text-align: center;
+    border-bottom: 2px solid #88c9e4;
+    margin: 0; /* evitar márgenes extra */
+}
+
+.franja-azul h1 {
+    margin: 0;
+    color: #003249;
+    font-size: 2.2em;
+}
+
+/* Cuerpo del contenido en páginas secundarias */
+.contenido {
+    padding: 40px;
+    font-size: 1.2em;
+    max-width: 900px;
+    margin: auto;
+    background-color: #ffffff;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.05);
+    margin-top: 30px;
+    border-radius: 10px;
+}
+
+/* Botón para regresar */
+.btn-regresar {
+    display: inline-block;
+    margin-top: 20px;
+    text-decoration: none;
+    color: #003249;
+    font-weight: bold;
+    transition: color 0.2s;
+}
+
+.btn-regresar:hover {
+    color: #0077aa;
+}
+
+
+
